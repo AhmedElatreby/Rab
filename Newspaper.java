@@ -1,9 +1,14 @@
-public class Newspaper extends Paper {
+public class Newspaper extends Publication {
+
+    public Newspaper(String title, String author, double price) {
+        super(title, author, price);
+        // TODO Auto-generated constructor stub
+    }
 
     @Override
     public void setTitle() {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
@@ -15,7 +20,7 @@ public class Newspaper extends Paper {
     @Override
     public void setAuthor() {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
@@ -27,7 +32,7 @@ public class Newspaper extends Paper {
     @Override
     public void printDetails() {
         // TODO Auto-generated method stub
-        
-    }    
-    
+
+    }
+
 }

@@ -1,4 +1,9 @@
-public class Magazine extends Paper {
+public class Magazine extends Publication {
+
+    public Magazine(String title, String author, double price) {
+        super(title, author, price);
+        //TODO Auto-generated constructor stub
+    }
 
     @Override
     public void setTitle() {

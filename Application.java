@@ -1,21 +1,19 @@
 
 public class Application {
     public static void main(String[] args) {
-        Book book = new Book();
-        Newspaper np = new Newspaper();
-        Magazine m = new Magazine();
+        Book book = new Book(null, null, 0);
+        Newspaper np = new Newspaper(null, null, 0);
+        Magazine m = new Magazine(null, null, 0);
         m.setTitle();
         m.setAuthor();
         
         
 
-        book.Publication(null, null, 15582);
-        System.out.println(book.toString());
+        System.out.println(book.details());
 
         System.out.println("----------------------------------");
         
-        np.Paper(2222);
-        System.out.println(np.toString());
+        System.out.println(np.details());
         System.out.println("----------------------------------");
         System.out.print(m.getAuthor());
     }

@@ -1,10 +1,14 @@
-public class Book extends Publication 
-{
+public class Book extends Publication {
+
+    public Book(String title, String author, double price) {
+        super(title, author, price);
+        // TODO Auto-generated constructor stub
+    }
 
     @Override
     public void setTitle() {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
@@ -16,7 +20,7 @@ public class Book extends Publication
     @Override
     public void setAuthor() {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
@@ -28,8 +32,7 @@ public class Book extends Publication
     @Override
     public void printDetails() {
         // TODO Auto-generated method stub
-        
+
     }
-   
-  
+
 }
