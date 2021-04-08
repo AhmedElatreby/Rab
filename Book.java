@@ -1,4 +1,4 @@
-public class Book extends Paper 
+public class Book extends Publication 
 {
 
     @Override

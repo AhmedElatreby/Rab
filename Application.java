@@ -7,8 +7,9 @@ public class Application {
         m.setTitle();
         m.setAuthor();
         
+        
 
-        book.Paper(15582);
+        book.Publication(null, null, 15582);
         System.out.println(book.toString());
 
         System.out.println("----------------------------------");

@@ -35,7 +35,7 @@ public class Publication implements IPublication{
     }
 
     public String toString() {
-        return String.format("\nPaper Name: %s\nAuther Name: %s\nPrice: £%s", this.title,
+        return String.format("%nPaper Name: %s%nAuther Name: %s%nPrice: £%s", this.title,
                 this.author, this.price);
 
     }
