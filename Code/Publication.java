@@ -1,8 +1,9 @@
+package Code;
 public abstract class Publication implements IPublication {
     private String title, author;
     private double price;
 
-    public Publication(String title, String author, double price) {
+    protected Publication(String title, String author, double price) {
 
         this.title = title;
         this.author = author;
@@ -13,14 +14,26 @@ public abstract class Publication implements IPublication {
         this.title = title;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getTitle() {
         return this.title;
     }
 
-    public void setAuthor() {
+    
+    /** 
+     * @param name
+     */
+    public void setAuthor(String name) {
         this.author = author;
     }
 
+    
+    /** 
+     * @return String
+     */
     public String getAuthor() {
         return this.author;
     }
@@ -30,6 +43,10 @@ public abstract class Publication implements IPublication {
 
     }
 
+    
+    /** 
+     * @return String
+     */
     public String details() {
         return String.format("%nPaper Name: %s%nAuther Name: %s%nPrice: £%s", this.title, this.author, this.price);
 

@@ -1,3 +1,4 @@
+package Code;
 public interface IPublication {
     public void setTitle();
     

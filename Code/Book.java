@@ -1,16 +1,21 @@
-public class Magazine extends Publication {
+package Code;
+public class Book extends Publication {
 
-    public Magazine(String title, String author, double price) {
+    public Book(String title, String author, double price) {
         super(title, author, price);
-        //TODO Auto-generated constructor stub
+        // TODO Auto-generated constructor stub
     }
 
     @Override
     public void setTitle() {
         // TODO Auto-generated method stub
-        
+
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String getTitle() {
         // TODO Auto-generated method stub
@@ -20,9 +25,13 @@ public class Magazine extends Publication {
     @Override
     public void setAuthor() {
         // TODO Auto-generated method stub
-        
+
     }
 
+    
+    /** 
+     * @return String
+     */
     @Override
     public String getAuthor() {
         // TODO Auto-generated method stub
@@ -32,7 +41,7 @@ public class Magazine extends Publication {
     @Override
     public void printDetails() {
         // TODO Auto-generated method stub
-        
-    }   
-    
+
+    }
+
 }

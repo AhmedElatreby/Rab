@@ -1,11 +1,18 @@
+import Code.Book;
+import Code.Magazine;
+import Code.Newspaper;
 
 public class Application {
+    
+    /** 
+     * @param args
+     */
     public static void main(String[] args) {
-        Book book = new Book(null, null, 0);
-        Newspaper np = new Newspaper(null, null, 0);
-        Magazine m = new Magazine(null, null, 0);
-        m.setTitle();
-        m.setAuthor();
+        Book book = new Book("book", "book", 2.0);
+        Newspaper np = new Newspaper("Newspaper", "Newspaper", 2.0);
+        Magazine m = new Magazine("Magazine", "Magazine", 2.0);
+        // m.setTitle();
+        m.setAuthor("ss");
         
         
 
@@ -15,6 +22,7 @@ public class Application {
         
         System.out.println(np.details());
         System.out.println("----------------------------------");
-        System.out.print(m.getAuthor());
+        System.out.println(m.details());
+        System.out.println(m.getAuthor());
     }
 }
