@@ -9,9 +9,9 @@ import Code.People.Author;
 
 public class Book extends Paper {
 
-    public Book(String title, int id, String edition, Author author, double price, Availability availability,
-    Publisher publishe, int age) {
-        super(title, id, edition, author, price, availability, publisher, age);
+    public Book(String title, int id, String edition, Author authorName, double price, Availability availability,
+    Publisher publishe) {
+        super(title, id, edition, authorName, price, availability, publisher);
     }
 
     @Override

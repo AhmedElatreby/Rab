@@ -27,7 +27,6 @@ public class Newspaper extends Paper {
 
     @Override
     public void setTitle() {
-        // TODO Auto-generated method stub
 
     }
 
@@ -36,7 +35,6 @@ public class Newspaper extends Paper {
      */
     @Override
     public String getTitle() {
-        // TODO Auto-generated method stub
         return null;
     }
 
@@ -45,31 +43,26 @@ public class Newspaper extends Paper {
      */
     @Override
     public void setAuthor(String name) {
-        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void printDetails() {
-        // TODO Auto-generated method stub
 
     }
 
     @Override
     public void setAuthor() {
-        // TODO Auto-generated method stub
 
     }
 
     @Override
     public Date getReleaseDate() {
-        // TODO Auto-generated method stub
         return null;
     }
 
     @Override
     public Author getAuthor() {
-        // TODO Auto-generated method stub
         return null;
     }
 

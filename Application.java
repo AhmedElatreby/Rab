@@ -9,23 +9,24 @@ public class Application {
      * @param args
      */
     public static void main(String[] args) {
-        Book book = new Book("title", 1, "edition", "author", 1, true, "publishe");
-        Newspaper np = new Newspaper("the sun", 1, "1st", "Rab", .99, true, "NP");
-        Magazine m = new Magazine("the sun", 1, "1st", "Rab", .99, true, "NP", "sport");
-        Author a = new Author("authorName", "10-05-1981");
+        Book book = new Book("test", 1, "1st", "rab", 1.2, true, "sun");
+        // ("title", 1, "edition", "author", 1, true, "publishe");
+        // Newspaper np = new Newspaper("the sun", 1, "1st", "Rab", .99, true, "NP");
+        // Magazine m = new Magazine("the sun", 1, "1st", "Rab", .99, true, "NP", "sport");
+        // Author a = new Author("authorName", "10-05-1981");
         // m.setTitle();
-        m.setAuthor("ss");
+        // m.setAuthor("ss");
         
         
 
         System.out.println(book.details());
 
-        System.out.println("----------------------------------");
+        // System.out.println("----------------------------------");
         
-        System.out.println(np.details());
-        System.out.println("----------------------------------");
-        System.out.println(m.details());
-        System.out.println("----------------------------------");
-        System.out.println(a.getAuthor());
+        // System.out.println(np.details());
+        // System.out.println("----------------------------------");
+        // System.out.println(m.details());
+        // System.out.println("----------------------------------");
+        // System.out.println(a.getAuthor());
     }
 }
