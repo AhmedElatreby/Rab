@@ -11,7 +11,7 @@ public class Book extends Paper {
 
     public Book(String title, int id, String edition, Author author, double price, Availability availability,
     Publisher publishe, int age) {
-        super(title, id, author, price, availability, publisher);
+        super(title, id, edition, author, price, availability, publisher, age);
     }
 
     @Override

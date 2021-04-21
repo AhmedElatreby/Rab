@@ -9,9 +9,9 @@ public class Application {
      * @param args
      */
     public static void main(String[] args) {
-        Book book = new Book("title", 10, 1, "author", 1.3, true, "publishe", 11);
-        Newspaper np = new Newspaper("the sun", 1, "1st", "Rab", .99, true, "NP", 16);
-        Magazine m = new Magazine("the sun", 1, "1st", "Rab", .99, true, "NP", 16, "sport");
+        Book book = new Book("title", 1, "edition", "author", 1, true, "publishe");
+        Newspaper np = new Newspaper("the sun", 1, "1st", "Rab", .99, true, "NP");
+        Magazine m = new Magazine("the sun", 1, "1st", "Rab", .99, true, "NP", "sport");
         Author a = new Author("authorName", "10-05-1981");
         // m.setTitle();
         m.setAuthor("ss");

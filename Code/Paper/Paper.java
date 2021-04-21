@@ -13,13 +13,12 @@ public abstract class Paper extends Publication {
 
     public Paper(String title, int id, String edition, Author author, double price, Availability availability,
             Publisher publisher) {
-        super(title, id, edition, author, availability, publisher, price);
+        super(title, id, edition, author,price, availability, publisher);
         this.isbn = isbn;
     }
 
-    public Paper(String title, int id, String edition, Author author, Publisher publisher, Availability availability,
-            String type) {
-        super(title, id, edition, author, availability, publisher, type);
+    public Paper(String title, int id, String edition, Author author, Publisher publisher, Availability availability) {
+        super(title, id, edition, author, publisher, availability);
         this.isbn = isbn;
     }
 

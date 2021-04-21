@@ -9,21 +9,21 @@ import Code.People.Author;
 
 public class Newspaper extends Paper {
 
-    private int age;
+    // private int age;
 
     public Newspaper(String title, int id, String edition, Author author, double price, Availability availability,
             Publisher publishe, int age) {
-        super(title, id, edition, author, price, availability, publishe, age);
-        this.age = age;
+        super(title, id, edition, author, price, availability, publishe);
+        // this.age = age;
     }
 
-    public int getAge() {
-        return this.age;
-    }
+    // public int getAge() {
+    //     return this.age;
+    // }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
+    // public void setAge(int age) {
+    //     this.age = age;
+    // }
 
     @Override
     public void setTitle() {
