@@ -29,7 +29,7 @@ public class Author {
     }
 
 
-    public String getAuthor() {
+    public String getAuthorDetails() {
         return getAuthorName()+ "\n" + getDOB() + "\n";
     }
 

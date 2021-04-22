@@ -10,8 +10,8 @@ import Code.People.Author;
 public class Book extends Paper {
     private String review;
 
-    public Book(String review, int issue, int isbn, String title, int id, String edition, Author authorName) {
-        super(issue, isbn, title, id, edition, authorName);
+    public Book(String review, int issue, int isbn, String title, int id, String edition,double price) {
+        super(issue, isbn, title, id, edition, price);
         this.review = review;
     }
 
@@ -89,9 +89,9 @@ public class Book extends Paper {
     }
 
     @Override
-    public void setAuthor() {
+    public Author setAuthorName(Author authorName) {
         // TODO Auto-generated method stub
-        
+        return null;
     }
 
 }

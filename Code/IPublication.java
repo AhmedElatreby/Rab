@@ -24,7 +24,7 @@ public interface IPublication {
 
     public String getReturnDate();
 
-    public void setAuthor();
+    public Author setAuthorName(Author authorName);
 
     public void setReturnDate(boolean returned);
 
@@ -33,5 +33,7 @@ public interface IPublication {
     public String getEdition();
 
     public void printDetails();
+
+    public int getPrice();
 
 }

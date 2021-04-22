@@ -10,8 +10,8 @@ public abstract class Paper extends Publication {
     private int issue = 1;
     private int isbn;
 
-    public Paper(int issue, int isbn, String title, int id, String edition, Author authorName) {
-        super(title, id, edition, authorName);
+    public Paper(int issue, int isbn, String title, int id, String edition, double price) {
+        super(title, id, edition, price);
         this.isbn = isbn;
         this.issue = issue;
 

@@ -11,13 +11,13 @@ public abstract class Publication implements IPublication {
     private String title;
     private int id;
     protected String edition;
-    private Author authorName;
+    private double price;
+    // private Author authorName;
     // private Availability availability;
     // protected static Publisher publisher;
     // private Date returnDate = null;
-    // private double price;
 
-    public Publication(String title, int id, String edition, Author authorName)
+    public Publication(String title, int id, String edition,double price)
     // , double price, Availability availability,
     // Publisher publisher)
     {
@@ -25,8 +25,8 @@ public abstract class Publication implements IPublication {
         this.title = title;
         this.id = id;
         this.edition = edition;
-        this.authorName = authorName;
-        // this.price = price;
+        this.price = price;
+        // this.authorName = authorName;
         // this.availability = availability;
         // this.publisher = publisher;
     }
@@ -64,10 +64,10 @@ public abstract class Publication implements IPublication {
 
     // /**
     // * @return String
-    // */
-    public Author getAuthor() {
-        return this.authorName;
-    }
+    // // */
+    // public Author getAuthor() {
+    //     return this.authorName;
+    // }
 
     // /**
     // * @return Availability
@@ -96,10 +96,11 @@ public abstract class Publication implements IPublication {
 
     /**
      * @param name
-     */
-    public void setAuthorName(String name) {
-        this.authorName = authorName;
-    }
+     * @return 
+    //  */
+    // public Author setAuthorName(Author authorName) {
+    //     return this.authorName = authorName;
+    // }
 
     // /**
     // * @param availability
@@ -122,17 +123,22 @@ public abstract class Publication implements IPublication {
     // this.returnDate = null;
     // }
 
-    // public void printDetails() {
-    // System.out.println(getTitle() + ". " + "£" + price);
+    public void printDetails() {
+    System.out.println(getTitle() + ". " + "£" + price);
 
-    // }
+    }
+
+    public int getPrice(){
+        System.out.println("£" + price);
+        return id;
+    }
 
     /**
      * @return String
      */
     public String details() {
-        return String.format("%nEdition: %s%nIssue number: %s%nPaper Name: %s%nID Number: %s%nAuthor name: ", this.edition,
-                this.getIssue(), this.edition, this.title, this.id, this.authorName);
+        return String.format("%nEdition: %s%nIssue number: %s%nPaper Name: %s%nID Number: %s%nPrice: ", this.edition,
+                this.getIssue(), this.edition, this.title, this.id, this.getPrice());
 
     }
 }

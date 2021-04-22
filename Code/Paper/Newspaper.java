@@ -11,9 +11,9 @@ public class Newspaper extends Paper {
 
     // private int age;
 
-    public Newspaper(String title, int id, String edition, Author author, double price, Availability availability,
+    public Newspaper(String title, int id, String edition, Author authorName, double price, Availability availability,
             Publisher publishe, int age) {
-        super(title, id, edition, author, price, availability, publishe);
+        super(title, id, edition, authorName, price, availability, publishe);
         // this.age = age;
     }
 
@@ -42,7 +42,7 @@ public class Newspaper extends Paper {
      * @param name
      */
     @Override
-    public void setAuthor(String name) {
+    public Author setAuthorName(Author authorName) {
 
     }
 
@@ -51,10 +51,6 @@ public class Newspaper extends Paper {
 
     }
 
-    @Override
-    public void setAuthor() {
-
-    }
 
     @Override
     public Date getReleaseDate() {
@@ -62,7 +58,38 @@ public class Newspaper extends Paper {
     }
 
     @Override
-    public Author getAuthor() {
+    public Availability getAvailability() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setAvailability(Availability availability) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public Publisher getPublisher() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public String getReturnDate() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setReturnDate(boolean returned) {
+        // TODO Auto-generated method stub
+        
+    }
+
+    @Override
+    public Author getAuthorName() {
+        // TODO Auto-generated method stub
         return null;
     }
 
