@@ -33,5 +33,11 @@ public class Magazine extends Paper {
         
     }
 
+    @Override
+    public Author getAuthor() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
     
 }
