@@ -10,8 +10,8 @@ import Code.People.Author;
 public class Book extends Paper {
     private String review;
 
-    public Book(String review, int issue, int isbn, String title, int id, String edition) {
-        super(issue, isbn, title, id, edition);
+    public Book(String review, int issue, int isbn, String title, int id, String edition, Author authorName) {
+        super(issue, isbn, title, id, edition, authorName);
         this.review = review;
     }
 
@@ -28,10 +28,10 @@ public class Book extends Paper {
         return null;
     }
 
-    @Override
-    public void setAuthor() {
+    // @Override
+    // public void setAuthorName() {
 
-    }
+    // }
 
     @Override
     public void printDetails() {
@@ -48,12 +48,7 @@ public class Book extends Paper {
 
     }
 
-    @Override
-    public Author getAuthor() {
-        return null;
-    }
-
-    public String getReview(){
+    public String getReview() {
         return this.review;
     }
 
@@ -66,7 +61,7 @@ public class Book extends Paper {
     @Override
     public void setAvailability(Availability availability) {
         // TODO Auto-generated method stub
-        
+
     }
 
     @Override
@@ -85,6 +80,18 @@ public class Book extends Paper {
     public String getEdition() {
         // TODO Auto-generated method stub
         return null;
+    }
+
+    @Override
+    public Author getAuthorName() {
+        // TODO Auto-generated method stub
+        return null;
+    }
+
+    @Override
+    public void setAuthor() {
+        // TODO Auto-generated method stub
+        
     }
 
 }

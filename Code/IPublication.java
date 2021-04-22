@@ -8,6 +8,8 @@ public interface IPublication {
 
     public void setTitle();
 
+    public int getIssue();
+
     public int getID();
 
     public Availability getAvailability();
@@ -26,7 +28,7 @@ public interface IPublication {
 
     public void setReturnDate(boolean returned);
 
-    public Author getAuthor();
+    public Author getAuthorName();
 
     public String getEdition();
 

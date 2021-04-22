@@ -3,21 +3,21 @@ package Code;
 import java.util.Date;
 
 import Code.People.Author;
-import Code.Paper.*;
+import Code.Paper.Book;
 
 public abstract class Publication implements IPublication {
 
     // create variables
     private String title;
     private int id;
-    private String edition;
-    // // private Author authorName;
+    protected String edition;
+    private Author authorName;
     // private Availability availability;
     // protected static Publisher publisher;
     // private Date returnDate = null;
     // private double price;
 
-    public Publication(String title, int id, String edition)
+    public Publication(String title, int id, String edition, Author authorName)
     // , double price, Availability availability,
     // Publisher publisher)
     {
@@ -25,7 +25,7 @@ public abstract class Publication implements IPublication {
         this.title = title;
         this.id = id;
         this.edition = edition;
-        // // this.authorName = authorName;
+        this.authorName = authorName;
         // this.price = price;
         // this.availability = availability;
         // this.publisher = publisher;
@@ -65,9 +65,9 @@ public abstract class Publication implements IPublication {
     // /**
     // * @return String
     // */
-    // // public Author getAuthor() {
-    // // return this.authorName;
-    // // }
+    public Author getAuthor() {
+        return this.authorName;
+    }
 
     // /**
     // * @return Availability
@@ -90,16 +90,16 @@ public abstract class Publication implements IPublication {
     // return "Return Date: " + this.returnDate;
     // }
 
-    // public void setTitle() {
-    // this.title = title;
-    // }
+    public void setTitle() {
+        this.title = title;
+    }
 
-    // /**
-    // * @param name
-    // */
-    // // public void setAuthor(String name) {
-    // // this.authorName = authorName;
-    // // }
+    /**
+     * @param name
+     */
+    public void setAuthorName(String name) {
+        this.authorName = authorName;
+    }
 
     // /**
     // * @param availability
@@ -131,8 +131,8 @@ public abstract class Publication implements IPublication {
      * @return String
      */
     public String details() {
-        return String.format("%nEdition: %s%nPaper Name: %s%nID Number: %s%nAuther Name: ", this.edition, this.edition, this.issue,
-                this.title, this.id);
+        return String.format("%nEdition: %s%nIssue number: %s%nPaper Name: %s%nID Number: %s%nAuthor name: ", this.edition,
+                this.getIssue(), this.edition, this.title, this.id, this.authorName);
 
     }
 }

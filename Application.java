@@ -9,7 +9,7 @@ public class Application {
      * @param args
      */
     public static void main(String[] args) {
-        Book book = new Book("good", 14, 444, "mmm", 66, "1st");
+        Book book = new Book("good", 14, 444, "mmm", 66, "1st","mark" );
         // Book book = new Book(review, issue, isbn, title, id, edition)
 
         //("title", 1, "edition", "author", 1, true, "publishe");
